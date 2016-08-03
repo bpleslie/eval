@@ -26,13 +26,4 @@
             </tradiv_license_setup>
         </resources>
     </global>
-    <frontend>
-        <layout>
-            <updates>
-                <tradiv_license>
-                    <file>tradiv_license_customer.xml</file>
-                </tradiv_license>
-            </updates>
-        </layout>
-    </frontend>
 </config>

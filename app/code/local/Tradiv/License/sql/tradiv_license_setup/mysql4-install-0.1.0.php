@@ -11,19 +11,18 @@ $entityTypeId     = $setup->getEntityTypeId('customer');
 $attributeSetId   = $setup->getDefaultAttributeSetId($entityTypeId);
 $attributeGroupId = $setup->getDefaultAttributeGroupId($entityTypeId, $attributeSetId);
 
-$installer->addAttribute('customer', 'license_id',  array(
+$installer->addAttribute($entityTypeId, 'license_id',  array(
     'type'     => 'varchar',
     'backend'  => '',
-    'label'    => 'Custom Attribute',
+    'label'    => 'License ID',
     'input'    => 'text',
     'source'   => '',
     'visible'  => true,
-    'required' => false,
+    'required' => true,
     'default'  => '',
     'frontend' => '',
     'unique'   => false,
-    'note'     => 'Custom Attribute'
-
+    'note'     => 'License ID'
 ));
 
 $attribute = Mage::getSingleton('eav/config')->getAttribute('customer', 'license_id');
