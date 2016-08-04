@@ -38,6 +38,7 @@ $setup->addAttributeToGroup(
 $used_in_forms = array();
 
 $used_in_forms[] = 'adminhtml_customer';
+$used_in_forms[] = 'customer_account_create';
 
 $attribute->setData('used_in_forms', $used_in_forms)
         ->setData('is_used_for_customer_segment', true)
