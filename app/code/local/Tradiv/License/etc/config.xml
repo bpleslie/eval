@@ -22,8 +22,22 @@
             <tradiv_license_setup>
                 <setup>
                     <module>Tradiv_License</module>
+                    <class>Mage_Customer_Model_Entity_Setup</class>
                 </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
             </tradiv_license_setup>
+            <tradiv_license_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </tradiv_license_write>
+            <tradiv_license_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </tradiv_license_read>
         </resources>
     </global>
 </config>
